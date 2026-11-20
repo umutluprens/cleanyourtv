@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CleanYourTV'yi indir ve kur</title>
+<meta name="description" content="CleanYourTV: Android TV ve Google TV için reklamsız, sade ana ekran. ADB gerekmez. İndir ve adım adım kur.">
+<link rel="icon" href="logo.png">
+<style>
+:root { --ink:#15181E; --muted:#596270; --accent:#0E7C59; --accent-ink:#FFFFFF; --mark:#34D399; --bg:#F6F7F5; --card:#FFFFFF; --line:#E3E6E1; --soft:#ECEFEA; --warn:#F6B935; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink:#EEF2F0; --muted:#A5AFAA; --accent:#34D399; --accent-ink:#0B1A14; --mark:#34D399; --bg:#15181E; --card:#1E2229; --line:#2C323B; --soft:#232830; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 28px 16px 60px; }
+header { display:flex; gap:14px; align-items:center; }
+header img { flex:none; border-radius:16px; }
+h1 { font-size: 28px; line-height:1.2; margin:0; }
+.sub { color:var(--muted); margin:2px 0 0; font-size:16px; }
+.hero { background:var(--card); border:1px solid var(--line); border-radius:22px; padding:26px 22px; margin:24px 0 10px; text-align:center; }
+.hero p { margin:0 0 14px; color:var(--muted); }
+.dl { display:inline-block; background:var(--accent); color:var(--accent-ink); text-decoration:none; font-size:20px; font-weight:700; padding:16px 34px; border-radius:16px; }
+.dl:hover, .dl:focus-visible { filter:brightness(1.08); }
+.meta { font-size:14px; color:var(--muted); margin-top:10px !important; }
+.url { font-size:15px; margin-top:12px !important; }
+.url code { white-space:nowrap; font-size:13px; background:var(--soft); padding:3px 8px; border-radius:8px; color:var(--ink); }
+.others { margin:16px 0 0 !important; font-size:15px; color:var(--muted); }
+.tabs { display:inline-flex; gap:6px; background:var(--soft); padding:4px; border-radius:12px; margin-top:6px; flex-wrap:wrap; justify-content:center; }
+.tabs button { border:0; background:transparent; color:var(--ink); font:600 15px/1 inherit; font-family:inherit; padding:9px 14px; border-radius:9px; cursor:pointer; }
+.tabs button[aria-pressed="true"] { background:var(--card); box-shadow:0 1px 3px rgba(0,0,0,.14); }
+.small { font-size:14px; }
+h2 { font-size:21px; margin:34px 0 4px; }
+ol.steps { list-style:none; padding:0; margin:16px 0 0; counter-reset:s; }
+ol.steps > li { counter-increment:s; background:var(--card); border:1px solid var(--line); border-radius:18px; padding:18px 18px 16px 62px; margin-bottom:14px; position:relative; }
+ol.steps > li::before { content:counter(s); position:absolute; left:16px; top:16px; width:32px; height:32px; border-radius:50%; background:var(--accent); color:var(--accent-ink); font-weight:700; text-align:center; line-height:32px; }
+ol.steps ul { margin:8px 0 0; padding-left:20px; }
+ol.steps ul li { margin:4px 0; }
+figure { margin:14px 0 2px; }
+figure img { display:block; max-width:100%; height:auto; border-radius:12px; }
+figcaption { font-size:13px; color:var(--muted); margin-top:4px; }
+.note { background:var(--soft); border-radius:14px; padding:14px 16px; font-size:15px; margin-top:14px; }
+.warn { border-left:4px solid var(--warn); }
+.hidden { display:none !important; }
+details { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:12px 16px; margin-top:10px; }
+summary { cursor:pointer; font-weight:600; }
+code { font-size:14px; }
+footer { margin-top:40px; font-size:14px; color:var(--muted); text-align:center; }
+a { color:var(--accent); }
+@media (max-width:520px){ ol.steps > li { padding-left:18px; padding-top:58px; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <img src="logo.png" width="64" height="64" alt="CleanYourTV logosu: zümrüt ekranlı antenli televizyon">
+  <div>
+    <h1>CleanYourTV'yi indir</h1>
+    <p class="sub">Android TV ve Google TV için reklamsız, sade ana ekran. Bilgisayar ve ADB gerekmez.</p>
+  </div>
+</header>
+
+<section class="hero" aria-live="polite">
+  <p id="detected">Tek dosya, her Android TV ve Google TV için:</p>
+  <a id="dl" class="dl" href="https://github.com/umutluprens/cleanyourtv/releases/download/v3.5-umut.2/cleanyourtv-3.5-umut.2.apk">APK'yı indir</a>
+  <p id="meta" class="meta"></p>
+  <p class="url">TV'de Downloader uygulamasına bu adresi yaz:<br><code id="short"></code></p>
+  <p class="others">Hangi cihaz?</p>
+  <div class="tabs" role="group" aria-label="Cihaz seç">
+    <button data-os="gtv">Google TV</button>
+    <button data-os="atv">Android TV</button>
+  </div>
+  <p class="meta small">Google TV: Google TV Streamer, Chromecast with Google TV ve Google TV'li televizyonlar. Android TV: Mi Box, Sony, Philips ve diğerleri.</p>
+</section>
+
+<span id="kurulum"></span>
+<h2>Kurulum</h2>
+<p class="sub">Beş adım, yaklaşık beş dakika. Kumanda yeterli.</p>
+<ol class="steps">
+  <li><b>APK'yı TV'ye aktar.</b> Üç yoldan biri yeter:
+    <ul>
+      <li><b>Downloader:</b> TV'de Google Play'den <b>Downloader</b> uygulamasını kur, yukarıdaki adresi yaz, indirince <b>Yükle</b>'ye bas.</li>
+      <li><b>Telefondan:</b> Telefona ve TV'ye <b>Send files to TV</b> uygulamasını kur. İkisi aynı Wi-Fi'da olsun. Dosyayı telefondan gönder, TV'de aç.</li>
+      <li><b>USB bellek:</b> APK'yı belleğe kopyala, TV'ye tak ve bir dosya yöneticisiyle (ör. File Commander) aç.</li>
+    </ul></li>
+  <li><b>Bilinmeyen kaynaklara izin ver.</b> TV, dosyayı açan uygulama için izin ister. <b>Ayarlar</b>'a bas ve o uygulamanın düğmesini aç, sonra geri dön.
+    <span class="small">Elle açmak için: Ayarlar › Gizlilik › Güvenlik ve kısıtlamalar › Bilinmeyen kaynaklar.</span>
+    <figure><img src="img/bilinmeyen.png" width="506" height="440" alt="Bilinmeyen uygulamaları yükle ekranı: dosya yöneticisinin düğmesi işaretli"><figcaption>Google TV Streamer'da Bilinmeyen uygulamaları yükle ekranı.</figcaption></figure></li>
+  <li><b>Yükle</b>'ye bas. Bitince <b>Bitti</b>'ye bas.
+    <span class="small">“Play Protect” uyarısı çıkarsa <b>Ayrıntılar › Yine de yükle</b>.</span></li>
+
+  <!-- GOOGLE TV -->
+  <li data-for="gtv"><b>Ana ekran yardımcısını aç.</b> Google TV ana ekran seçtirmez. Bunu CleanYourTV'nin erişilebilirlik yardımcısı yapar.
+    <ul>
+      <li><b>Ayarlar › Sistem › Erişilebilirlik</b>'e gir, en alta, <b>Hizmetler</b> bölümüne in.</li>
+      <li><b>CleanYourTV ana ekranı</b>'na gir, düğmesini aç ve çıkan uyarıyı onayla.</li>
+    </ul>
+    <figure><img src="img/erisilebilirlik.png" width="506" height="126" alt="Erişilebilirlik, Hizmetler bölümü: CleanYourTV ana ekranı satırı işaretli, durumu Kapalı"><figcaption>Açmadan önce satırda “Kapalı” yazar. Açınca “Açık” olur.</figcaption></figure>
+    <p class="note warn">Listede bir de <b>CleanYourTV giriş tuşu</b> var. O başka bir yardımcıdır, ana ekran için onu <b>açma</b>.</p>
+    <p class="note">Android “cihazın tam kontrolü” diye uyarır. Bu, Home tuşunu izleyebilmek için her erişilebilirlik yardımcısında çıkan standart uyarıdır. CleanYourTV ekranı okumaz, internete bağlanmaz.</p></li>
+
+  <!-- ANDROID TV -->
+  <li data-for="atv" class="hidden"><b>CleanYourTV'yi ana ekran yap.</b> Kumandada <b>Home</b>'a bas. Hangi ana ekranın kullanılacağı sorulursa <b>CleanYourTV</b>'yi seç ve <b>Her zaman</b>'a bas.
+    <span class="small">Soru gelmezse: Ayarlar › Uygulamalar › Varsayılan uygulamalar › Ana ekran uygulaması › CleanYourTV (menü adı markaya göre değişir).</span>
+    <p class="note">Stok ana ekran yine de geri geliyorsa Google TV sekmesindeki erişilebilirlik adımını da uygula: <b>Ayarlar › Erişilebilirlik › CleanYourTV ana ekranı</b>.</p></li>
+
+  <li><b>Home'a bas.</b> <span data-for="gtv">Google TV'nin kendi ekranı bir an görünür, sonra CleanYourTV gelir. Bilgisayarsız kurulumda bu kısa geçiş normaldir.</span><span data-for="atv" class="hidden">CleanYourTV açılmalı. Yeniden başlatınca da açılışta o gelir.</span></li>
+</ol>
+
+<h2>Bilmen gerekenler</h2>
+<ul>
+  <li>Ana ekranın görünümü değişir, reklam ve öneri satırları gider. Uygulamalarına, Cast'e ve kumandaya dokunulmaz.</li>
+  <li>Sesli arama çalışır. “YouTube'da … aç” gibi isteklerin sonuçları Google TV'nin kendi ekranında açılır. Home'a basınca CleanYourTV'ye dönersin.</li>
+  <li>TV'yi tek başına hızlandırmaz. Stok ana ekran arka planda çalışmaya devam eder. Gerçek hızlanma için gereksiz uygulamaları bilgisayardan kapatmak gerekir.</li>
+  <li>Bazı TV'ler üçüncü parti ana ekranı kabul etmez (ör. bazı Çin pazarı TCL yazılımları).</li>
+</ul>
+
+<h2>Geri alma</h2>
+<ol class="steps">
+  <li data-for="gtv"><b>Ayarlar › Sistem › Erişilebilirlik › CleanYourTV ana ekranı</b>'nı kapat.</li>
+  <li data-for="atv" class="hidden"><b>Ayarlar › Uygulamalar › Varsayılan uygulamalar › Ana ekran uygulaması</b>'ndan eski ana ekranı seç.</li>
+  <li><b>Ayarlar › Uygulamalar › CleanYourTV › Kaldır.</b> Home tuşu hemen eski ana ekrana döner.</li>
+</ol>
+
+<details>
+  <summary>Dosyayı doğrulamak istersen</summary>
+  <p class="small">APK'nın SHA-256 değeri:<br><code id="sha"></code></p>
+  <p class="small">İmza sertifikası SHA-256 (her güncellemede aynı kalır):<br><code>f4f929d751cf22237ec89b43af7303f6ae2e665ebefb5f4e53c4efcc91a7e3ac</code></p>
+  <p class="small">Güncelleme çıktığında aynı düğmeden indirip üzerine kurman yeterli. Ayarların ve erişilebilirlik izni korunur.</p>
+</details>
+
+<footer>
+  <p><a id="release" href="https://github.com/umutluprens/cleanyourtv/releases/tag/v3.5-umut.2">Sürüm notları</a> · <a href="https://github.com/umutluprens/cleanyourtv/blob/apk-paketi/docs/KURULUM-TR.md">Ayrıntılı rehber</a> · <a href="https://github.com/umutluprens/cleanyourtv/issues">Sorun bildir</a></p>
+  <p>CleanYourTV, Gathin ve katkıcıları tarafından geliştirilen açık kaynak bir ana ekrandır (MIT lisansı). Bu sayfadaki hazır APK, umutluprens'in fork'undan derlenmiştir.<br>
+  Görseller Google TV Streamer'dan alınmıştır, senin TV'nde küçük farklarla görünebilir. Google TV ve Android TV, Google LLC'nin ticari markalarıdır. CleanYourTV, Google ile bağlantılı değildir.</p>
+</footer>
+</main>
+
+<script>
+// The only place to change on a new release.
+var REL = {
+  version: "3.5-umut.2",
+  size: "594 KB",
+  url: "https://github.com/umutluprens/cleanyourtv/releases/download/v3.5-umut.2/cleanyourtv-3.5-umut.2.apk",
+  page: "https://github.com/umutluprens/cleanyourtv/releases/tag/v3.5-umut.2",
+  sha256: "d12dcde8cca8eefe5a65263844c4cc2badb6a1395902b8098222e11bef8e3a08",
+  short: "umutluprens.github.io/cleanyourtv/apk"
+};
+document.getElementById("dl").href = REL.url;
+document.getElementById("meta").textContent = "Sürüm " + REL.version + " · " + REL.size + " · Android 8 ve üstü";
+document.getElementById("short").textContent = REL.short;
+document.getElementById("sha").textContent = REL.sha256;
+document.getElementById("release").href = REL.page;
+function show(os) {
+  document.querySelectorAll("[data-for]").forEach(function (el) {
+    el.classList.toggle("hidden", el.getAttribute("data-for") !== os);
+  });
+  document.querySelectorAll(".tabs button").forEach(function (b) {
+    b.setAttribute("aria-pressed", b.getAttribute("data-os") === os ? "true" : "false");
+  });
+}
+document.querySelectorAll(".tabs button").forEach(function (b) {
+  b.addEventListener("click", function () { show(b.getAttribute("data-os")); });
+});
+show("gtv");
+</script>
+</body>
+</html>
