@@ -56,7 +56,7 @@ a { color:var(--accent); }
   <img src="logo.png" width="64" height="64" alt="CleanYourTV logosu: zümrüt ekranlı antenli televizyon">
   <div>
     <h1>CleanYourTV'yi indir</h1>
-    <p class="sub">Android TV ve Google TV için reklamsız, sade ana ekran. Bilgisayar ve ADB gerekmez.</p>
+    <p class="sub">Android TV ve Google TV için reklamsız, sade ana ekran.</p>
   </div>
 </header>
 
@@ -65,47 +65,47 @@ a { color:var(--accent); }
   <a id="dl" class="dl" href="https://github.com/umutluprens/cleanyourtv/releases/download/v3.5-umut.2/cleanyourtv-3.5-umut.2.apk">APK'yı indir</a>
   <p id="meta" class="meta"></p>
   <p class="url">TV'de Downloader uygulamasına bu adresi yaz:<br><code id="short"></code></p>
-  <p class="others">Hangi cihaz?</p>
-  <div class="tabs" role="group" aria-label="Cihaz seç">
-    <button data-os="gtv">Google TV</button>
-    <button data-os="atv">Android TV</button>
-  </div>
-  <p class="meta small">Google TV: Google TV Streamer, Chromecast with Google TV ve Google TV'li televizyonlar. Android TV: Mi Box, Sony, Philips ve diğerleri.</p>
 </section>
 
 <span id="kurulum"></span>
 <h2>Kurulum</h2>
-<p class="sub">Beş adım, yaklaşık beş dakika. Kumanda yeterli.</p>
+<p class="sub">Beş adım, kumanda yeterli.</p>
 <ol class="steps">
   <li><b>APK'yı TV'ye aktar.</b> Üç yoldan biri yeter:
     <ul>
-      <li><b>Downloader:</b> TV'de Google Play'den <b>Downloader</b> uygulamasını kur, yukarıdaki adresi yaz, indirince <b>Yükle</b>'ye bas.</li>
+      <li><b>Downloader:</b> TV'de Google Play'den <b>Downloader</b> uygulamasını kur, yukarıdaki adresi yaz ve <b>Load</b>'a bas.</li>
       <li><b>Telefondan:</b> Telefona ve TV'ye <b>Send files to TV</b> uygulamasını kur. İkisi aynı Wi-Fi'da olsun. Dosyayı telefondan gönder, TV'de aç.</li>
       <li><b>USB bellek:</b> APK'yı belleğe kopyala, TV'ye tak ve bir dosya yöneticisiyle (ör. File Commander) aç.</li>
-    </ul></li>
+    </ul>
+    <figure><img src="img/downloader-adres.png" width="800" height="247" alt="Downloader'da adres kutusu: umutluprens.github.io/cleanyourtv/apk yazılı"><figcaption>Downloader'da adresi yazıp Load'a bas.</figcaption></figure></li>
   <li><b>Bilinmeyen kaynaklara izin ver.</b> TV, dosyayı açan uygulama için izin ister. <b>Ayarlar</b>'a bas ve o uygulamanın düğmesini aç, sonra geri dön.
     <span class="small">Elle açmak için: Ayarlar › Gizlilik › Güvenlik ve kısıtlamalar › Bilinmeyen kaynaklar.</span>
-    <figure><img src="img/bilinmeyen.png" width="506" height="440" alt="Bilinmeyen uygulamaları yükle ekranı: dosya yöneticisinin düğmesi işaretli"><figcaption>Bu listede CleanYourTV değil, APK dosyasını açan uygulama görünür: burada File Commander, sende Downloader ya da Send files to TV olabilir. İzni ona veriyorsun.</figcaption></figure></li>
+    <figure><img src="img/bilinmeyen.png" width="507" height="440" alt="Bilinmeyen uygulamaları yükle ekranı: Downloader satırının düğmesi işaretli"><figcaption>Bu listede CleanYourTV değil, APK dosyasını açan uygulama görünür (burada Downloader). İzni ona veriyorsun.</figcaption></figure></li>
   <li><b>Yükle</b>'ye bas. Bitince <b>Bitti</b>'ye bas.
-    <span class="small">“Play Protect” uyarısı çıkarsa <b>Ayrıntılar › Yine de yükle</b>.</span></li>
+    <figure><img src="img/yukle.png" width="661" height="277" alt="Kurulum penceresi: CleanYourTV, Bu uygulamayı yüklemek istiyor musunuz, Yükle düğmesi işaretli"></figure></li>
 
-  <!-- GOOGLE TV -->
-  <li data-for="gtv"><b>Ana ekran yardımcısını aç.</b> Google TV ana ekran seçtirmez. Bunu CleanYourTV'nin erişilebilirlik yardımcısı yapar.
+  <li><b>CleanYourTV'yi ana ekran yap.</b> Kumandada <b>Home</b>'a bas.
     <ul>
-      <li><b>Ayarlar › Sistem › Erişilebilirlik</b>'e gir, en alta, <b>Hizmetler</b> bölümüne in.</li>
-      <li><b>CleanYourTV ana ekranı</b>'na gir, düğmesini aç ve çıkan uyarıyı onayla.</li>
+      <li><b>Hangi ana ekranın kullanılacağını sorarsa</b> (çoğu Android TV): <b>CleanYourTV</b>'yi seç ve <b>Her zaman</b>'a bas. Bu kadar.</li>
+      <li><b>Sormazsa</b> (Google TV): <b>Ayarlar › Sistem › Erişilebilirlik</b>'e gir, en alttaki <b>Hizmetler</b> bölümünde <b>CleanYourTV ana ekranı</b>'na gir.</li>
     </ul>
-    <figure><img src="img/erisilebilirlik.png" width="506" height="126" alt="Erişilebilirlik, Hizmetler bölümü: CleanYourTV ana ekranı satırı işaretli, durumu Kapalı"><figcaption>Açmadan önce satırda “Kapalı” yazar. Açınca “Açık” olur.</figcaption></figure>
-    <p class="note warn">Listede bir de <b>CleanYourTV giriş tuşu</b> var. O başka bir yardımcıdır, ana ekran için onu <b>açma</b>.</p>
-    <p class="note">Android “cihazın tam kontrolü” diye uyarır. Bu, Home tuşunu izleyebilmek için her erişilebilirlik yardımcısında çıkan standart uyarıdır. CleanYourTV ekranı okumaz, internete bağlanmaz.</p></li>
+    <figure><img src="img/erisilebilirlik.png" width="506" height="126" alt="Erişilebilirlik, Hizmetler bölümü: CleanYourTV ana ekranı satırı işaretli, durumu Kapalı"></figure>
+    <p><b>Etkinleştir</b>'i aç.</p>
+    <figure><img src="img/etkinlestir.png" width="507" height="313" alt="CleanYourTV ana ekranı sayfası: Etkinleştir düğmesi işaretli"></figure>
+    <p>Çıkan pencerede <b>Tamam</b>'a bas.</p>
+    <figure><img src="img/tamam.png" width="885" height="230" alt="CleanYourTV ana ekranı kullanılsın mı penceresi: Tamam işaretli"><figcaption>Bu, her erişilebilirlik yardımcısında çıkan standart uyarıdır. CleanYourTV yalnızca Home tuşunu izler, internete bağlanmaz.</figcaption></figure>
+    <p class="note warn">Listede bir de <b>CleanYourTV giriş tuşu</b> var. O başka bir yardımcıdır, ana ekran için onu <b>açma</b>.</p></li>
 
-  <!-- ANDROID TV -->
-  <li data-for="atv" class="hidden"><b>CleanYourTV'yi ana ekran yap.</b> Kumandada <b>Home</b>'a bas. Hangi ana ekranın kullanılacağı sorulursa <b>CleanYourTV</b>'yi seç ve <b>Her zaman</b>'a bas.
-    <span class="small">Soru gelmezse: Ayarlar › Uygulamalar › Varsayılan uygulamalar › Ana ekran uygulaması › CleanYourTV (menü adı markaya göre değişir).</span>
-    <p class="note">Stok ana ekran yine de geri geliyorsa Google TV sekmesindeki erişilebilirlik adımını da uygula: <b>Ayarlar › Erişilebilirlik › CleanYourTV ana ekranı</b>.</p></li>
-
-  <li><b>Home'a bas.</b> <span data-for="gtv">Google TV'nin kendi ekranı bir an görünür, sonra CleanYourTV gelir. Bilgisayarsız kurulumda bu kısa geçiş normaldir.</span><span data-for="atv" class="hidden">CleanYourTV açılmalı. Yeniden başlatınca da açılışta o gelir.</span></li>
+  <li><b>Home'a bas.</b> CleanYourTV gelmeli. Google TV'de önce kendi ekranı bir an görünür, sonra CleanYourTV gelir; bu kısa geçiş normaldir.</li>
 </ol>
+
+<h2>Google TV'de kurulum olmazsa</h2>
+<p>Yeni Google TV'lerde Google'ın iki güvenlik kuralı dosyadan kurulumu zorlaştırabilir:</p>
+<ul>
+  <li><b>Play Protect</b> “Uygulama, cihazınızı korumak için engellendi” deyip kurulumu durdurabilir.</li>
+  <li>Kurulsa bile <b>Etkinleştir</b> düğmesi açılıp hemen kendiliğinden kapanabilir (Android'in “kısıtlanmış ayar” kuralı). Google TV menülerinde bunu açacak bir seçenek yok.</li>
+</ul>
+<p class="note">Bu durumda CleanYourTV'yi bir bilgisayardan ADB ile kurmak gerekir: <a href="https://github.com/Gathin23/cleanyourtv">CleanYourTV'nin kendi kurulum rehberi</a>. Klasik Android TV'ler (Mi Box, Sony, Philips gibi) bu kurallardan etkilenmez.</p>
 
 <h2>Bilmen gerekenler</h2>
 <ul>
@@ -117,8 +117,7 @@ a { color:var(--accent); }
 
 <h2>Geri alma</h2>
 <ol class="steps">
-  <li data-for="gtv"><b>Ayarlar › Sistem › Erişilebilirlik › CleanYourTV ana ekranı</b>'nı kapat.</li>
-  <li data-for="atv" class="hidden"><b>Ayarlar › Uygulamalar › Varsayılan uygulamalar › Ana ekran uygulaması</b>'ndan eski ana ekranı seç.</li>
+  <li>Google TV'de <b>Ayarlar › Sistem › Erişilebilirlik › CleanYourTV ana ekranı</b>'nı kapat. Android TV'de <b>Ayarlar › Uygulamalar › Varsayılan uygulamalar › Ana ekran uygulaması</b>'ndan eski ana ekranı seç.</li>
   <li><b>Ayarlar › Uygulamalar › CleanYourTV › Kaldır.</b> Home tuşu hemen eski ana ekrana döner.</li>
 </ol>
 
@@ -151,18 +150,6 @@ document.getElementById("meta").textContent = "Sürüm " + REL.version + " · " 
 document.getElementById("short").textContent = REL.short;
 document.getElementById("sha").textContent = REL.sha256;
 document.getElementById("release").href = REL.page;
-function show(os) {
-  document.querySelectorAll("[data-for]").forEach(function (el) {
-    el.classList.toggle("hidden", el.getAttribute("data-for") !== os);
-  });
-  document.querySelectorAll(".tabs button").forEach(function (b) {
-    b.setAttribute("aria-pressed", b.getAttribute("data-os") === os ? "true" : "false");
-  });
-}
-document.querySelectorAll(".tabs button").forEach(function (b) {
-  b.addEventListener("click", function () { show(b.getAttribute("data-os")); });
-});
-show("gtv");
 </script>
 </body>
 </html>
