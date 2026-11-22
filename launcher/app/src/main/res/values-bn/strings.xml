@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CleanYourTV</string>
+    <string name="app_name">Snug TV</string>
     <string name="inputs">ইনপুট</string>
     <string name="wifi">ওয়াই-ফাই</string>
     <string name="settings">সেটিংস</string>
@@ -28,7 +28,7 @@
     <string name="vpn">VPN</string>
     <string name="vpn_off">VPN বন্ধ</string>
     <string name="home_settings">ডিফল্ট হোম বেছে নিন</string>
-    <string name="home_settings_help">CleanYourTV-কে আর হোম হিসেবে ব্যবহার না করতে আপনার আগের হোম বেছে নিন, আবার ফিরতে CleanYourTV বেছে নিন। আগের লঞ্চারটি চালু থাকতে হবে এবং আপনার টিভিতে হোম বেছে নেওয়ার ব্যবস্থা থাকতে হবে; সেটি বন্ধ করা থাকলে আগে রিস্টোর স্ক্রিপ্ট চালান।</string>
+    <string name="home_settings_help">Snug TV-কে আর হোম হিসেবে ব্যবহার না করতে আপনার আগের হোম বেছে নিন, আবার ফিরতে Snug TV বেছে নিন। আগের লঞ্চারটি চালু থাকতে হবে এবং আপনার টিভিতে হোম বেছে নেওয়ার ব্যবস্থা থাকতে হবে; সেটি বন্ধ করা থাকলে আগে রিস্টোর স্ক্রিপ্ট চালান।</string>
     <string name="launcher_settings">লঞ্চার সেটিংস</string>
     <string name="native_settings">নেটিভ সেটিংস</string>
     <string name="columns_label">প্রতি সারিতে অ্যাপ</string>
@@ -49,7 +49,7 @@
     <string name="on">চালু</string>
     <string name="off">বন্ধ</string>
     <string name="enable">চালু করুন</string>
-    <string name="input_key_name">CleanYourTV Input</string>
+    <string name="input_key_name">Snug TV Input</string>
     <string name="input_key_service_description">রিমোটের ইনপুট বোতাম চাপলে ইনপুট বদলানোর তালিকা খোলে।</string>
     <string name="home_key_name">হোম বোতাম</string>
     <string name="home_key_description">রিমোটের হোম বোতাম দিয়ে এই লঞ্চার খোলে।</string>

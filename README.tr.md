@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  Bu dal CleanYourTV'nin gayriresmi bir fork'udur (paket <code>io.github.umutluprens.tvhome</code>). Hazır APK için <a href="docs/KURULUM-TR.md">Türkçe kurulum rehberi</a>.
+  Bu dal <b>Snug TV</b>'dir: CleanYourTV'nin gayriresmi bir fork'u (paket <code>io.github.umutluprens.tvhome</code>). Hazır APK için <a href="docs/KURULUM-TR.md">Türkçe kurulum rehberi</a>.
 </p>
 
 <p align="center">

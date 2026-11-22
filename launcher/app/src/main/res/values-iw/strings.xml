@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CleanYourTV</string>
+    <string name="app_name">Snug TV</string>
     <string name="inputs">כניסות</string>
     <string name="wifi">Wi-Fi</string>
     <string name="settings">הגדרות</string>
@@ -45,7 +45,7 @@
     <string name="vpn">VPN</string>
     <string name="vpn_off">ה־VPN כבוי</string>
     <string name="home_settings">בחירת מסך הבית כברירת מחדל</string>
-    <string name="home_settings_help">כדי להפסיק להשתמש ב־CleanYourTV כמסך הבית, יש לבחור במסך הבית המקורי. כדי לחזור, יש לבחור ב־CleanYourTV. אפליקציית מסך הבית המקורית חייבת להיות פעילה, והטלוויזיה צריכה לתמוך בבחירת מסך בית. אם האפליקציה הושבתה, יש להפעיל תחילה את סקריפט השחזור.</string>
+    <string name="home_settings_help">כדי להפסיק להשתמש ב־Snug TV כמסך הבית, יש לבחור במסך הבית המקורי. כדי לחזור, יש לבחור ב־Snug TV. אפליקציית מסך הבית המקורית חייבת להיות פעילה, והטלוויזיה צריכה לתמוך בבחירת מסך בית. אם האפליקציה הושבתה, יש להפעיל תחילה את סקריפט השחזור.</string>
     <string name="launcher_settings">הגדרות מסך הבית</string>
     <string name="native_settings">הגדרות היצרן</string>
     <string name="columns_label">אפליקציות בשורה</string>
@@ -62,7 +62,7 @@
     <string name="on">פעיל</string>
     <string name="off">כבוי</string>
     <string name="enable">הפעלה</string>
-    <string name="input_key_name">CleanYourTV Input</string>
+    <string name="input_key_name">Snug TV Input</string>
     <string name="input_key_service_description">פותח את בורר הכניסות בלחיצה על כפתור הכניסות בשלט.</string>
     <string name="home_key_name">כפתור הבית</string>
     <string name="home_key_description">גורם לכפתור הבית בשלט לפתוח את מסך הבית הזה.</string>

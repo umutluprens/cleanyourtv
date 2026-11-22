@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CleanYourTV</string>
+    <string name="app_name">Snug TV</string>
     <string name="inputs">Джерела</string>
     <string name="wifi">Wi-Fi</string>
     <string name="settings">Налаштування</string>
@@ -45,7 +45,7 @@
     <string name="vpn">VPN</string>
     <string name="vpn_off">VPN вимкнено</string>
     <string name="home_settings">Головний екран за замовчуванням</string>
-    <string name="home_settings_help">Виберіть оригінальний головний екран, щоб більше не використовувати CleanYourTV як головний екран, або CleanYourTV, щоб повернутися. Оригінальний головний екран має бути увімкнений, а телевізор має показувати вибір головного екрана; якщо його було вимкнено, спершу скористайтеся скриптом відновлення.</string>
+    <string name="home_settings_help">Виберіть оригінальний головний екран, щоб більше не використовувати Snug TV як головний екран, або Snug TV, щоб повернутися. Оригінальний головний екран має бути увімкнений, а телевізор має показувати вибір головного екрана; якщо його було вимкнено, спершу скористайтеся скриптом відновлення.</string>
     <string name="launcher_settings">Налаштування лаунчера</string>
     <string name="native_settings">Налаштування виробника</string>
     <string name="columns_label">Застосунків у рядку</string>
@@ -71,7 +71,7 @@
     <string name="on">Увімк.</string>
     <string name="off">Вимк.</string>
     <string name="enable">Увімкнути</string>
-    <string name="input_key_name">CleanYourTV Input</string>
+    <string name="input_key_name">Snug TV Input</string>
     <string name="input_key_service_description">Відкриває перемикач джерел під час натискання кнопки Input на пульті.</string>
     <string name="home_key_name">Кнопка Home</string>
     <string name="home_key_description">Кнопка Home на пульті відкриває цей лаунчер.</string>

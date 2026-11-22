@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CleanYourTV</string>
+    <string name="app_name">Snug TV</string>
     <string name="inputs">Input</string>
     <string name="wifi">Wi-Fi</string>
     <string name="settings">Setelan</string>
@@ -26,7 +26,7 @@
     <string name="vpn">VPN</string>
     <string name="vpn_off">VPN mati</string>
     <string name="home_settings">Pilih Beranda utama</string>
-    <string name="home_settings_help">Pilih beranda asli untuk berhenti menggunakan CleanYourTV sebagai Beranda, atau CleanYourTV untuk kembali. Antarmuka asli harus aktif dan TV Anda harus menyediakan pemilih beranda; gunakan skrip pemulihan terlebih dahulu jika sebelumnya dinonaktifkan.</string>
+    <string name="home_settings_help">Pilih beranda asli untuk berhenti menggunakan Snug TV sebagai Beranda, atau Snug TV untuk kembali. Antarmuka asli harus aktif dan TV Anda harus menyediakan pemilih beranda; gunakan skrip pemulihan terlebih dahulu jika sebelumnya dinonaktifkan.</string>
     <string name="launcher_settings">Setelan antarmuka</string>
     <string name="native_settings">Setelan pabrikan</string>
     <string name="columns_label">App per baris</string>
@@ -53,7 +53,7 @@
     <string name="on">Aktif</string>
     <string name="off">Mati</string>
     <string name="enable">Aktifkan</string>
-    <string name="input_key_name">CleanYourTV Input</string>
+    <string name="input_key_name">Snug TV Input</string>
     <string name="input_key_service_description">Membuka pengalih input saat tombol Input pada remote ditekan.</string>
     <string name="home_key_name">Tombol beranda</string>
     <string name="home_key_description">Membuat tombol Beranda pada remote membuka antarmuka ini.</string>

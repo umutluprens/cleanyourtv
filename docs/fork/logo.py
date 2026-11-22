@@ -93,7 +93,7 @@ def banner(st, w, h):
     W, H = w * SS, h * SS; im = gradient(W, H, st["top"], st["bottom"]); d = ImageDraw.Draw(im)
     g = H * .58; st["glyph"](d, W * .055, (H - g) / 2, g, st["fg"], st["accent"], star=st.get("star"))
     size = H * st.get("word_scale", .215)
-    f = font(round(size), 600); a, b = "Clean", "YourTV"
+    f = font(round(size), 600); a, b = st.get("words", ("Clean", "YourTV"))
     tx = W * .055 + g + W * .035; avail = W * .95 - tx
     wa, wb = d.textlength(a, font=f), d.textlength(b, font=f)
     if wa + wb > avail:

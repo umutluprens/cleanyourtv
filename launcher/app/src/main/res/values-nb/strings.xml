@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CleanYourTV</string>
+    <string name="app_name">Snug TV</string>
     <string name="inputs">Innganger</string>
     <string name="wifi">Wi-Fi</string>
     <string name="settings">Innstillinger</string>
@@ -27,7 +27,7 @@
     <string name="vpn">VPN</string>
     <string name="vpn_off">VPN er av</string>
     <string name="home_settings">Velg standard startskjerm</string>
-    <string name="home_settings_help">Velg den opprinnelige startskjermen for å slutte å bruke CleanYourTV, eller velg CleanYourTV for å bytte tilbake. Den opprinnelige startskjermen må være aktivert, og TV-en må støtte valg av startskjerm. Kjør tilbakeføringsskriptet først hvis den ble deaktivert.</string>
+    <string name="home_settings_help">Velg den opprinnelige startskjermen for å slutte å bruke Snug TV, eller velg Snug TV for å bytte tilbake. Den opprinnelige startskjermen må være aktivert, og TV-en må støtte valg av startskjerm. Kjør tilbakeføringsskriptet først hvis den ble deaktivert.</string>
     <string name="launcher_settings">Innstillinger for startskjermen</string>
     <string name="native_settings">Produsentinnstillinger</string>
     <string name="columns_label">Apper per rad</string>
@@ -54,7 +54,7 @@
     <string name="on">På</string>
     <string name="off">Av</string>
     <string name="enable">Aktiver</string>
-    <string name="input_key_name">CleanYourTV Input</string>
+    <string name="input_key_name">Snug TV Input</string>
     <string name="input_key_service_description">Åpner inngangsvelgeren når du trykker på kildeknappen på fjernkontrollen.</string>
     <string name="home_key_name">Hjem-knapp</string>
     <string name="home_key_description">Lar Hjem-knappen på fjernkontrollen åpne denne startskjermen.</string>
