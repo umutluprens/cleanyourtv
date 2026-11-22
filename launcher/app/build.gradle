@@ -18,11 +18,12 @@ android {
         // Opt-in identity for firmware with a package-name HOME allowlist.
         // Xiaomi: docs/devices/xiaomi-mitv-aetp0-dofus.md (com.ts.launcher).
         // ColorOS TV: docs/devices/oppo-k9-55-oppocnm632.md (com.oneplus.tv.launcher2).
-        applicationId providers.gradleProperty('launcherApplicationId').getOrElse('com.gathin.tvhome')
+        // This unofficial fork installs under its own package, beside the upstream launcher and never over it.
+        applicationId providers.gradleProperty('launcherApplicationId').getOrElse('io.github.umutluprens.tvhome')
         minSdk 26
         targetSdk 34
         versionCode 14
-        versionName '3.5-umut.2'
+        versionName '3.5-umut.3'
     }
 
     signingConfigs {

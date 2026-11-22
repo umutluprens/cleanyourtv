@@ -83,11 +83,12 @@ def cvte_bullet():
 
 
 def application_id():
-    """The launcher's package name, what the manifest's `.MainActivity` expands to."""
+    """The upstream launcher's package name, the one the device note was recorded with.
+
+    The note quotes a session on an upstream build, so the package is the namespace, which is also what the
+    manifest's `.MainActivity` expands to. A fork that changes the default applicationId does not change it.
+    """
     gradle = GRADLE.read_text(encoding="utf-8")
-    match = re.search(r"launcherApplicationId'\)\.getOrElse\('([^']+)'\)", gradle)
-    if match:
-        return match.group(1)
     return re.search(r"namespace '([^']+)'", gradle).group(1)
 
 

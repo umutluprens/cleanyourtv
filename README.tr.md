@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  Bu fork: bilgisayarsız ve ADB'siz kurulan hazır APK için <a href="docs/KURULUM-TR.md">Türkçe kurulum rehberi</a>.
+  Bu dal CleanYourTV'nin gayriresmi bir fork'udur (paket <code>io.github.umutluprens.tvhome</code>). Hazır APK için <a href="docs/KURULUM-TR.md">Türkçe kurulum rehberi</a>.
 </p>
 
 <p align="center">

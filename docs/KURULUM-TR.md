@@ -2,7 +2,7 @@
 
 Bu sayfa, bu fork'un GitHub Releases sayfasındaki hazır APK'yı bilgisayar ve ADB kullanmadan bir Android TV veya Google TV'ye kurmayı anlatır. Tek APK tüm bu cihazlar için aynıdır.
 
-Uygulama TV'de **CleanYourTV** adıyla görünür. Paket adı `com.gathin.tvhome`. Erişilebilirlik ayarlarındaki yardımcının adı **CleanYourTV ana ekranı**'dır (TV İngilizceyse **CleanYourTV Home**).
+Bu, CleanYourTV'nin **gayriresmi bir fork'udur** (asıl proje: [Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv)). Uygulama TV'de **CleanYourTV** adıyla görünür. Paket adı `io.github.umutluprens.tvhome`, yani asıl projenin uygulamasından (`com.gathin.tvhome`) ayrı bir uygulamadır ve onun üstüne değil yanına kurulur. Erişilebilirlik ayarlarındaki yardımcının adı **CleanYourTV ana ekranı**'dır (TV İngilizceyse **CleanYourTV Home**).
 
 ## Önce bilmen gerekenler
 
@@ -75,7 +75,7 @@ Home tuşu hemen eski ana ekrana döner. Başka hiçbir şey değişmemiş olur.
 
 ## Güncelleme
 
-Yeni sürümü aynı yoldan kurman yeterli, ayarların ve kutu sıralaman korunur. Bu fork'un APK'ları hep aynı anahtarla imzalanır. Not: Upstream'in `build-and-install.sh` ile kurulmuş (debug imzalı) bir CleanYourTV'nin üstüne kurulamaz. Önce onu kaldırman gerekir, kutu sıralaması sıfırlanır.
+Yeni sürümü aynı yoldan kurman yeterli, ayarların ve kutu sıralaman korunur. Bu fork'un APK'ları hep aynı anahtarla imzalanır. Asıl projenin uygulaması (`com.gathin.tvhome`) TV'de kuruluysa ona dokunulmaz, ikisi yan yana durabilir. Ana ekran tuşunu hangisinin karşılayacağını erişilebilirlik ayarlarında hangi yardımcıyı açtığın belirler, ikisini birden açma. Not: 3.5-umut.2 ve öncesi `com.gathin.tvhome` paket adıyla geliyordu. 3.5-umut.3'e geçerken eski sürümü kaldır, kutu sıralaması bir kez sıfırlanır.
 
 ## Emeği geçenler
 
