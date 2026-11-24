@@ -2,7 +2,7 @@
 
 Bu sayfa, bu fork'un GitHub Releases sayfasındaki hazır APK'yı bilgisayar ve ADB kullanmadan bir Android TV veya Google TV'ye kurmayı anlatır. Tek APK tüm bu cihazlar için aynıdır.
 
-Snug TV, CleanYourTV'nin **gayriresmi bir fork'udur** (asıl proje: [Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv)). Adı İngilizcede "sıcak, rahat" anlamına gelir. Uygulama TV'de **Snug TV** adıyla görünür. Paket adı `io.github.umutluprens.tvhome`, yani asıl projenin uygulamasından (`com.gathin.tvhome`) ayrı bir uygulamadır ve onun üstüne değil yanına kurulur. Erişilebilirlik ayarlarındaki yardımcının adı **Snug TV ana ekranı**'dır (TV İngilizceyse **Snug TV Home**).
+Snug TV'deki ana ekran, Gathin ve katkıcılarının geliştirdiği [CleanYourTV](https://github.com/Gathin23/cleanyourtv) başlatıcısıdır. Snug TV onun **gayriresmi bir fork'udur**: kodun neredeyse tamamı CleanYourTV'nin, bu fork onu tek APK olarak paketler ve birkaç ayarını değiştirir. Adı İngilizcede "sıcak, rahat" anlamına gelir. Uygulama TV'de **Snug TV** adıyla görünür. Paket adı `io.github.umutluprens.tvhome`, yani asıl projenin uygulamasından (`com.gathin.tvhome`) ayrı bir uygulamadır ve onun üstüne değil yanına kurulur. Erişilebilirlik ayarlarındaki yardımcının adı **Snug TV ana ekranı**'dır (TV İngilizceyse **Snug TV Home**).
 
 ## Önce bilmen gerekenler
 

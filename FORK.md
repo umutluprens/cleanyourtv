@@ -6,6 +6,8 @@ Snug TV is an unofficial fork of [CleanYourTV](https://github.com/Gathin23/clean
 and its contributors. It is not made or supported by the CleanYourTV project, so report problems here and not
 upstream.
 
+Almost all of Snug TV is CleanYourTV's launcher code, unchanged. The list below is everything the fork changes.
+
 The fork ships the launcher as one release-signed APK under its own package, `io.github.umutluprens.tvhome`. It
 installs beside the reference launcher (`com.gathin.tvhome`) rather than over it. Turn on only one of the two Home
 helpers in the accessibility settings.

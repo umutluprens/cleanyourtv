@@ -4,7 +4,8 @@
 
 <p align="center">
   <b>Your TV, snug and ad-free.</b><br>
-  Snug TV is an unofficial fork of CleanYourTV with its own name and package: one APK for Android TV and Google TV.<br>
+  The launcher is <a href="https://github.com/Gathin23/cleanyourtv">CleanYourTV</a>'s, made by Gathin and its contributors.<br>
+  Snug TV is an unofficial fork that packages it as one APK for Android TV and Google TV, with its own name and a few changes.<br>
   <a href="https://umutluprens.github.io/snug-tv/">Download and install</a> (Turkish) · <a href="FORK.md">What it changes</a> · <a href="docs/KURULUM-TR.md">Türkçe rehber</a>
 </p>
 
