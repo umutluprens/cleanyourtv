@@ -1,9 +1,19 @@
 <p align="center">
-  <a href="https://cleanyour.tv"><img src="https://raw.githubusercontent.com/Gathin23/cleanyourtv/main/docs/banner.png" alt="CleanYourTV. Your TV, minus the ads. Strip the bloatware from any Android TV or Google TV over Wi-Fi and replace the ad-filled home screen with a clean launcher that looks like an Apple TV. No root, no cable, nothing uninstalled, and a one-line restore." width="800"></a>
+  <img src="docs/fork/snug-tv-banner.png" alt="Snug TV" width="640">
 </p>
 
 <p align="center">
-  This branch is <b>Snug TV</b>, an unofficial fork of CleanYourTV with its own package. See <a href="FORK.md">FORK.md</a>.
+  <b>Your TV, snug and ad-free.</b><br>
+  Snug TV is an unofficial fork of CleanYourTV with its own name and package: one APK for Android TV and Google TV.<br>
+  <a href="https://umutluprens.github.io/snug-tv/">Download and install</a> (Turkish) · <a href="FORK.md">What it changes</a> · <a href="docs/KURULUM-TR.md">Türkçe rehber</a>
+</p>
+
+<p align="center"><i>Below is the upstream CleanYourTV README, kept as it is.</i></p>
+
+<hr>
+
+<p align="center">
+  <a href="https://cleanyour.tv"><img src="https://raw.githubusercontent.com/Gathin23/cleanyourtv/main/docs/banner.png" alt="CleanYourTV. Your TV, minus the ads. Strip the bloatware from any Android TV or Google TV over Wi-Fi and replace the ad-filled home screen with a clean launcher that looks like an Apple TV. No root, no cable, nothing uninstalled, and a one-line restore." width="800"></a>
 </p>
 
 <p align="center">

@@ -1,5 +1,7 @@
 # Snug TV
 
+*Your TV, snug and ad-free.*
+
 Snug TV is an unofficial fork of [CleanYourTV](https://github.com/Gathin23/cleanyourtv), the launcher by Gathin
 and its contributors. It is not made or supported by the CleanYourTV project, so report problems here and not
 upstream.
@@ -25,8 +27,10 @@ service.
 
 ## Install
 
-Download the APK and its `.sha256` file from
-[Releases](https://github.com/umutluprens/cleanyourtv/releases) and check the hash.
+Download page with pictures (Turkish): https://umutluprens.github.io/snug-tv/
+
+Or download the APK and its `.sha256` file from
+[Releases](https://github.com/umutluprens/snug-tv/releases) and check the hash.
 
 - **Android TV:** install the APK with a file manager or Downloader, then pick Snug TV when the TV asks for a
   home app.
