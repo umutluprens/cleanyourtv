@@ -62,7 +62,7 @@ a { color:var(--accent); }
 
 <section class="hero" aria-live="polite">
   <p id="detected">Tek dosya, her Android TV ve Google TV için:</p>
-  <a id="dl" class="dl" href="https://github.com/umutluprens/cleanyourtv/releases/download/v3.5-umut.3/snug-tv-3.5-umut.3.apk">APK'yı indir</a>
+  <a id="dl" class="dl" href="https://github.com/umutluprens/snug-tv/releases/download/v3.5-umut.3/snug-tv-3.5-umut.3.apk">APK'yı indir</a>
   <p id="meta" class="meta"></p>
   <p class="url">TV'de Downloader uygulamasına bu adresi yaz:<br><code id="short"></code></p>
 </section>
@@ -76,8 +76,7 @@ a { color:var(--accent); }
       <li><b>Downloader:</b> TV'de Google Play'den <b>Downloader</b> uygulamasını kur, yukarıdaki adresi yaz ve <b>Load</b>'a bas.</li>
       <li><b>Telefondan:</b> Telefona ve TV'ye <b>Send files to TV</b> uygulamasını kur. İkisi aynı Wi-Fi'da olsun. Dosyayı telefondan gönder, TV'de aç.</li>
       <li><b>USB bellek:</b> APK'yı belleğe kopyala, TV'ye tak ve bir dosya yöneticisiyle (ör. File Commander) aç.</li>
-    </ul>
-    <figure><img src="img/downloader-adres.png" width="800" height="247" alt="Downloader'da adres kutusu: umutluprens.github.io/cleanyourtv/apk yazılı"><figcaption>Downloader'da adresi yazıp Load'a bas.</figcaption></figure></li>
+    </ul></li>
   <li><b>Bilinmeyen kaynaklara izin ver.</b> TV, dosyayı açan uygulama için izin ister. <b>Ayarlar</b>'a bas ve o uygulamanın düğmesini aç, sonra geri dön.
     <span class="small">Elle açmak için: Ayarlar › Gizlilik › Güvenlik ve kısıtlamalar › Bilinmeyen kaynaklar.</span>
     <figure><img src="img/bilinmeyen.png" width="507" height="440" alt="Bilinmeyen uygulamaları yükle ekranı: Downloader satırının düğmesi işaretli"><figcaption>Bu listede Snug TV değil, APK dosyasını açan uygulama görünür (burada Downloader). İzni ona veriyorsun.</figcaption></figure></li>
@@ -130,7 +129,7 @@ a { color:var(--accent); }
 </details>
 
 <footer>
-  <p><a id="release" href="https://github.com/umutluprens/cleanyourtv/releases/tag/v3.5-umut.3">Sürüm notları</a> · <a href="https://github.com/umutluprens/cleanyourtv/blob/apk-paketi/docs/KURULUM-TR.md">Ayrıntılı rehber</a> · <a href="https://github.com/umutluprens/cleanyourtv/issues">Sorun bildir</a></p>
+  <p><a id="release" href="https://github.com/umutluprens/snug-tv/releases/tag/v3.5-umut.3">Sürüm notları</a> · <a href="https://github.com/umutluprens/snug-tv/blob/apk-paketi/docs/KURULUM-TR.md">Ayrıntılı rehber</a> · <a href="https://github.com/umutluprens/snug-tv/issues">Sorun bildir</a></p>
   <p>Snug TV, <a href="https://github.com/Gathin23/cleanyourtv">CleanYourTV</a>'nin gayriresmi bir fork'udur. CleanYourTV, Gathin ve katkıcıları tarafından geliştirilen açık kaynak bir ana ekrandır (MIT lisansı). Snug TV'yi CleanYourTV projesi yapmaz ve desteklemez. Sorunları bu fork'a bildir.<br>
   Görseller Google TV Streamer'dan alınmıştır, senin TV'nde küçük farklarla görünebilir. Google TV ve Android TV, Google LLC'nin ticari markalarıdır. Snug TV, Google ile bağlantılı değildir.</p>
 </footer>
@@ -141,10 +140,10 @@ a { color:var(--accent); }
 var REL = {
   version: "3.5-umut.3",
   size: "594 KB",
-  url: "https://github.com/umutluprens/cleanyourtv/releases/download/v3.5-umut.3/snug-tv-3.5-umut.3.apk",
-  page: "https://github.com/umutluprens/cleanyourtv/releases/tag/v3.5-umut.3",
+  url: "https://github.com/umutluprens/snug-tv/releases/download/v3.5-umut.3/snug-tv-3.5-umut.3.apk",
+  page: "https://github.com/umutluprens/snug-tv/releases/tag/v3.5-umut.3",
   sha256: "fdb073430a16dd3cc288315bf7030f41dd937a433ba29fa35e5c0d93e904e367",
-  short: "umutluprens.github.io/cleanyourtv/apk"
+  short: "umutluprens.github.io/snug-tv/apk"
 };
 document.getElementById("dl").href = REL.url;
 document.getElementById("meta").textContent = "Sürüm " + REL.version + " · " + REL.size + " · Android 8 ve üstü";
